@@ -17,7 +17,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
-PICS = (environ.get('PICS', 'https://envs.sh/Xq0.mp4')).split()
+PICS = (environ.get('PICS', 'https://envs.sh/XWB.jpg https://envs.sh/XWI.jpg https://envs.sh/XWn.jpg https://envs.sh/XWT.jpg https://envs.sh/XWA.jpg')).split()
 
 
 # Admins & Users
@@ -37,7 +37,7 @@ REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', False)) # Set Tr
 TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', False)) # Set True Or False (This try again button is only for request to join fsub not for normal fsub)
 
 # This Is Force Subscribe Channel, also known as Auth Channel 
-auth_channel = environ.get('AUTH_CHANNEL', '') # give your force subscribe channel id here else leave it blank
+auth_channel = environ.get('AUTH_CHANNEL', '-1002490672090') # give your force subscribe channel id here else leave it blank
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 
 # This Channel Is For When User Request Any File Name With command or hashtag like - /request or #request
@@ -84,10 +84,10 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Us
 
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+cty_y0ogWVRlMDE9')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+cty_y0ogWVRlMDE9')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+cty_y0ogWVRlMDE9') # Support Chat Link Without https:// or @
-OWNER_LNK = environ.get('OWNER_LNK', '@FrazMods')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/movie_requesting_ww')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Cyber_Fcracker')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+OE2od3Lyk3YyOTU1') # Support Chat Link Without https:// or @
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/FrazMods')
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
@@ -170,7 +170,7 @@ RENAME_MODE = bool(environ.get('RENAME_MODE', False)) # Set True or False
 
 
 # Auto Approve Info : If True Then Bot Approve New Upcoming Join Request Else Not
-AUTO_APPROVE_MODE = bool(environ.get('AUTO_APPROVE_MODE', False)) # Set True or False
+AUTO_APPROVE_MODE = bool(environ.get('AUTO_APPROVE_MODE', True)) # Set True or False
 
 
 # Start Command Reactions
